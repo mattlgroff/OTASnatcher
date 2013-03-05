@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textMultiLine"
+        android:paddingBottom="40dp"
+        android:paddingTop="35dp"
+        android:text="This app requires Root access. You will need to Allow Access. Only Press &apos;Snatch OTA&apos; after the update has been 100% downloaded. The Snatcher can take up to a few minutes depending on how large the OTA Update is, so give it time. You will NOT be notified when its finished copying."
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSnatchOTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:text="Snatch OTA"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnBatakang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnSnatchOTA"
+        android:layout_below="@+id/btnSnatchOTA"
+        android:layout_marginTop="31dp"
+        android:textColor="#FFFFFF"
+        android:text="Visit Batakang.com" />
+
+</RelativeLayout>
